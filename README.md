@@ -11,7 +11,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 Clone the repo and set it to ignore untracked files
 
 ```
-$ git clone --bare https://github.com/luke-bassett/dotfiles/ $HOME/.cfg
+$ git clone --bare git@github.com:luke-bassett/dotfiles.git $HOME/.cfg
 $ config config --local status.showUntrackedFiles no
 ```
 And then checkout
