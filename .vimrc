@@ -1,7 +1,7 @@
 " ----- basics -----
 set ignorecase
 syntax on
-set number
+set nonumber
 
 " ----- line length -----
 set textwidth=80
