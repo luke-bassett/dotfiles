@@ -1,7 +1,6 @@
 # Path to oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 ZSH_THEME="robbyrussell"
 
 plugins=(
