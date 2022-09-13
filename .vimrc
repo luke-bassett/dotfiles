@@ -1,6 +1,7 @@
 " ----- basics -----
 set ignorecase
 syntax on
+set number
 
 " ----- line length -----
 set textwidth=80
@@ -50,8 +51,9 @@ let g:lightline = {'colorscheme': 'simpleblack',}
 " nothing better than unpredictable.
 au filetype markdown set indentexpr=
 
-" ----- python -----
-au filetype python set nu
+" ----- text/markdown -----
+au filetype markdown set nonumber norelativenumber
+au filetype text set nonumber norelativenumber
 
 " ----- autocomplete -----
 " disable the annoying doc scratch window
@@ -62,3 +64,17 @@ let g:doge_doc_standard_python = 'google'
 
 " ----- paste -----
 set pastetoggle=<F2>
+
+" This setting makes search case-insensitive when all characters in the string
+" being searched are lowercase. However, the search becomes case-sensitive if
+" it contains any capital letters. This makes searching more convenient.
+set ignorecase
+set smartcase
+" Enable searching as you type, rather than waiting till you press enter.
+set incsearch
+
+" Unbind some useless/annoying default key bindings.
+nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
+
+" Disable audible bell because it's annoying.
+set noerrorbells visualbell t_vb=
