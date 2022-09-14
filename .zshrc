@@ -7,8 +7,6 @@ plugins=(
   zsh-autosuggestions
 )
 
-source $ZSH/oh-my-zsh.sh
-
 alias l="ls -1"
 alias t="tmux"
 alias tls="tmux ls"
@@ -21,3 +19,5 @@ alias gpo="git push origin"
 
 # notes directory
 alias notesync='if [[ $(git config -l | grep remote.origin.url)="remote.origin.url=git@github.com:luke-bassett/notes.git" ]]; then git add -A && git commit -m 'notesync' && git push; fi'
+
+source $ZSH/oh-my-zsh.sh
