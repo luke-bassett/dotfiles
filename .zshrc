@@ -12,6 +12,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   zsh-autosuggestions
+  vi-mode
 )
 
 
@@ -35,6 +36,3 @@ alias ga="git add"
 alias gaa="git add -A"
 alias gcm="git commit -m" 
 alias gpo="git push origin"
-
-# Vim editing mode. (defaults to insert mode)
-bindkey -v
