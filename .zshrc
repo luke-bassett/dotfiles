@@ -35,3 +35,6 @@ alias ga="git add"
 alias gaa="git add -A"
 alias gcm="git commit -m" 
 alias gpo="git push origin"
+
+# Vim editing mode. (defaults to insert mode)
+bindkey -v
