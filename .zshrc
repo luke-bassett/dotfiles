@@ -13,6 +13,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   zsh-autosuggestions
   vi-mode
+  zsh-syntax-highlighting
 )
 
 
