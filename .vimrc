@@ -24,6 +24,16 @@ set shiftwidth=4
 " on pressing tab insert 4 spaces
 set expandtab
 
+" ----- search -----
+set hlsearch
+nnoremap <silent> <esc> :nohlsearch<cr><esc>
+hi Search ctermbg=DarkBlue
+hi Search ctermfg=White
+
+
+" ----- paste -----
+set pastetoggle=<F2>
+
 " ----- plugins -----
 " autoinstall vim-plug if missing
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -61,9 +71,6 @@ set completeopt-=preview
 
 " ----- doge -----
 let g:doge_doc_standard_python = 'google'
-
-" ----- paste -----
-set pastetoggle=<F2>
 
 " This setting makes search case-insensitive when all characters in the string
 " being searched are lowercase. However, the search becomes case-sensitive if
