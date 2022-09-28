@@ -26,7 +26,7 @@ source $ZSH/oh-my-zsh.sh
 alias notesync='if [[ $(git config -l | grep remote.origin.url)="remote.origin.url=git@github.com:luke-bassett/notes.git" ]]; then git add -A && git commit -m 'notesync' && git push; fi'
 # outputs meal tracker from log
 # Usage 'ft {n}' where n is number of line to show from tail
-alias fl="grep -E '(## \d{4}|^ate@\d{4})' ~/notes/log/2022.md"
+alias fl="grep -E '(## \d{4}\.\d{2}\.\d{2}|^ate@\d{4})' ~/notes/log/2022.md"
 alias ft="fl | tail -n"
 
 alias l="ls -1"
