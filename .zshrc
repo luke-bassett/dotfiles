@@ -16,22 +16,27 @@ plugins=(
   zsh-syntax-highlighting
 )
 
-
-# notes directory
-alias notesync='if [[ $(git config -l | grep remote.origin.url)="remote.origin.url=git@github.com:luke-bassett/notes.git" ]]; then git add -A && git commit -m 'notesync' && git push; fi'
-
 source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Custom alias, should be after "source $ZSH/oh-my-zsh.sh"
+# notes directory
+alias notesync='if [[ $(git config -l | grep remote.origin.url)="remote.origin.url=git@github.com:luke-bassett/notes.git" ]]; then git add -A && git commit -m 'notesync' && git push; fi'
+# outputs meal tracker from log
+# Usage 'ft {n}' where n is number of line to show from tail
+alias fl="grep -E '(## \d{4}|^ate@\d{4})' ~/notes/log/2022.md"
+alias ft="fl | tail -n"
+
 alias l="ls -1"
 alias la="ls -lAh"
 alias ll="ls -lh"
+
 alias t="tmux"
 alias tls="tmux ls"
 alias ta="tmux attach -t"
+
 alias gs="git status"
 alias ga="git add"
 alias gaa="git add -A"
