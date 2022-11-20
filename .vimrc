@@ -30,6 +30,15 @@ nnoremap <silent> <esc> :nohlsearch<cr><esc>
 hi Search ctermbg=DarkBlue
 hi Search ctermfg=White
 
+" ----- spell -----
+highlight clear SpellBad
+highlight SpellBad cterm=undercurl ctermfg=9
+highlight clear SpellCap
+highlight SpellCap cterm=underline ctermfg=11
+highlight clear SpellLocal
+highlight SpellLocal cterm=underline ctermfg=9
+highlight clear SpellRare
+highlight SpellRare cterm=underline ctermfg=9
 
 " ----- paste -----
 set pastetoggle=<F2>
@@ -60,6 +69,7 @@ let g:lightline = {'colorscheme': 'simpleblack',}
 " them off. This means there are no continured lists or anything, but I like
 " nothing better than unpredictable.
 au filetype markdown set indentexpr=
+au filetype markdown set spell
 
 " ----- text/markdown -----
 au filetype markdown set nonumber norelativenumber
