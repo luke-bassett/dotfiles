@@ -57,6 +57,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ackyshake/VimCompletesMe'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 call plug#end()
 
 " ----- lightline -----
