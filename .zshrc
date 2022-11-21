@@ -41,3 +41,5 @@ alias gcm="git commit -m"
 alias gpo="git push origin"
 alias gl="git log --graph --all --format=format:'%C(bold blue)%h%C(reset) %C(bold yellow)%d%C(reset) %C(white)%s%C(reset) %C(green)(%ar)%C(reset) %C(dim white)%an%C(reset)'"
 alias gll="git log --graph --decorate --all --format=format:'%C(bold blue)%h%C(reset) %C(bold yellow)%d%C(reset)%n%C(green)%ar%C(reset) - %an%n%C(bold white)%s%C(reset)%n%b'"
+
+alias ssh="TERM=xterm-256color ssh" # https://weibeld.net/terminals-and-shells/italics.html
