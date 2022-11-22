@@ -69,11 +69,14 @@ let g:lightline = {'colorscheme': 'simpleblack',}
 " them off. This means there are no continured lists or anything, but I like
 " nothing better than unpredictable.
 au filetype markdown set indentexpr=
-au filetype markdown set spell
+" make bulleted lists denoted with hyphens indent and wrap properly
+au filetype markdown set comments=fb:-
 
 " ----- text/markdown -----
 au filetype markdown set nonumber norelativenumber
 au filetype text set nonumber norelativenumber
+au filetype markdown set spell
+au filetype text set spell
 
 " ----- autocomplete -----
 " disable the annoying doc scratch window
