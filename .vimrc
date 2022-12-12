@@ -57,6 +57,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ackyshake/VimCompletesMe'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 call plug#end()
 
 " ----- lightline -----
@@ -69,11 +70,12 @@ let g:lightline = {'colorscheme': 'simpleblack',}
 " them off. This means there are no continured lists or anything, but I like
 " nothing better than unpredictable.
 au filetype markdown set indentexpr=
-au filetype markdown set spell
 
 " ----- text/markdown -----
 au filetype markdown set nonumber norelativenumber
 au filetype text set nonumber norelativenumber
+au filetype markdown set spell
+au filetype text set spell
 
 " ----- autocomplete -----
 " disable the annoying doc scratch window
