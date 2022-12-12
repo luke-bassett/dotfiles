@@ -43,3 +43,9 @@ alias gl="git log --graph --all --format=format:'%C(bold blue)%h%C(reset) %C(bol
 alias gll="git log --graph --decorate --all --format=format:'%C(bold blue)%h%C(reset) %C(bold yellow)%d%C(reset)%n%C(green)%ar%C(reset) - %an%n%C(bold white)%s%C(reset)%n%b'"
 
 alias ssh="TERM=xterm-256color ssh" # https://weibeld.net/terminals-and-shells/italics.html
+
+alias v="vim"
+alias ve="vim '+ normal G'"
+
+alias j="vim '+ normal G' ~/notes/1_journal.md"
+alias wn="vim '+ normal G' ~/notes/2_work_notes.md"
