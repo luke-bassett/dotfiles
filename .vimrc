@@ -95,3 +95,6 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
 " Disable audible bell because it's annoying.
 set noerrorbells visualbell t_vb=
+
+# avoid starting in replace mode (https://github.com/vim/vim/issues/6365)
+set ambw=double
