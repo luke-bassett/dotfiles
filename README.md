@@ -30,6 +30,8 @@ rm ~/.tmux.conf; ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 rm ~/.zshrc; ln -s ~/.dotfiles/.zshrc ~/.zshrc
 rm ~/.p10k.zsh; ln ~/.dotfiles/.p10k.zsh ~/.p10k.zsh
 ```
+6. In iterm, add update the default theme to use the `tango_modified.itermcolors` theme.
+7. Follow this [guide](https://weibeld.net/terminals-and-shells/italics.html) to allow italics in the terminal. **WARNING: tmux will be broken if you skip this step**
 
 # To Do
 - Add setup script
