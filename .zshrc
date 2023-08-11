@@ -46,6 +46,3 @@ alias ssh="TERM=xterm-256color ssh" # https://weibeld.net/terminals-and-shells/i
 
 alias v="vim"
 alias ve="vim '+ normal G'"
-
-alias j="vim '+ normal G' ~/notes/1_journal.md"
-alias wn="vim '+ normal G' ~/notes/2_work_notes.md"
