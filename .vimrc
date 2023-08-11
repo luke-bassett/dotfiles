@@ -54,7 +54,7 @@ endif
 call plug#begin()
 Plug 'sheerun/vim-polyglot'
 Plug 'itchyny/lightline.vim'
-Plug 'ackyshake/VimCompletesMe'
+" Plug 'ackyshake/VimCompletesMe' seems dead as of 2023.08.09
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
