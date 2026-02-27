@@ -1,3 +1,10 @@
+# --- completion ---
+autoload -Uz compinit && compinit
+source ~/.dotfiles/fzf-tab/fzf-tab.plugin.zsh
+
+# --- fzf ---
+source <(fzf --zsh)
+
 # --- plugins ---
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -7,11 +14,7 @@ bindkey -v
 export KEYTIMEOUT=1
 
 # --- prompt ---
-autoload -Uz vcs_info
-precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats ' (%b)'
-setopt PROMPT_SUBST
-PROMPT='%F{blue}%~%f%F{green}${vcs_info_msg_0_}%f %# '
+eval "$(starship init zsh)"
 
 # --- aliases ---
 alias l="ls -1"
