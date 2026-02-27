@@ -1,5 +1,6 @@
 # --- completion ---
 autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 source ~/.dotfiles/fzf-tab/fzf-tab.plugin.zsh
 
 # --- fzf ---
@@ -15,6 +16,10 @@ export KEYTIMEOUT=1
 
 # --- prompt ---
 eval "$(starship init zsh)"
+
+# --- ls colors ---
+export CLICOLOR=1
+export LSCOLORS=gxfxcxdxbxegedabagacad  # cyan directories (prompt uses blue)
 
 # --- aliases ---
 alias l="ls -1"
