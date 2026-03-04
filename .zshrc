@@ -43,3 +43,6 @@ alias ssh="TERM=xterm-256color ssh"
 
 alias v="vim"
 alias ve="vim '+ normal G'"
+
+# open this week's note
+n() { vim ~/notes/$(date +%Yw%V).md }
