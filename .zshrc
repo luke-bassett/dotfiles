@@ -13,6 +13,9 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # --- vi mode ---
 bindkey -v
 export KEYTIMEOUT=1
+# up/down arrow searches history by prefix of what's already typed
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
 
 # --- prompt ---
 eval "$(starship init zsh)"
