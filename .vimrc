@@ -44,8 +44,11 @@ highlight SpellRare cterm=underline ctermfg=9
 set pastetoggle=<F2>
 
 " ----- syntax performance -----
-set redrawtime=10000
-let g:yats_host_keyword = 0
+" The yats.vim TypeScript syntax engine (used by both vim-polyglot and Vim's
+" built-in syntax) causes redrawtime timeouts. Use JavaScript syntax for TS
+" files instead — it's fast and covers keywords, strings, comments, functions.
+let g:polyglot_disabled = ['typescript', 'typescriptreact']
+au BufRead,BufNewFile *.ts,*.tsx set filetype=javascript
 
 " ----- plugins -----
 " autoinstall vim-plug if missing
