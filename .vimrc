@@ -43,6 +43,10 @@ highlight SpellRare cterm=underline ctermfg=9
 " ----- paste -----
 set pastetoggle=<F2>
 
+" ----- syntax performance -----
+set redrawtime=10000
+let g:yats_host_keyword = 0
+
 " ----- plugins -----
 " autoinstall vim-plug if missing
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
