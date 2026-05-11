@@ -83,8 +83,9 @@ au filetype markdown set nonumber norelativenumber
 au filetype text set nonumber norelativenumber
 au filetype markdown set spell
 au filetype text set spell
-au filetype markdown setlocal wrap linebreak breakindent
-au filetype text setlocal wrap linebreak breakindent
+" textwidth=0 and stripping t/a prevents ftplugins from re-enabling auto-wrap.
+au filetype markdown setlocal wrap linebreak breakindent textwidth=0 formatoptions-=t formatoptions-=a
+au filetype text setlocal wrap linebreak breakindent textwidth=0 formatoptions-=t formatoptions-=a
 au filetype markdown,text nnoremap <buffer> j gj
 au filetype markdown,text nnoremap <buffer> k gk
 au filetype markdown,text vnoremap <buffer> j gj
