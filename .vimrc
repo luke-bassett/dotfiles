@@ -83,6 +83,12 @@ au filetype markdown set nonumber norelativenumber
 au filetype text set nonumber norelativenumber
 au filetype markdown set spell
 au filetype text set spell
+au filetype markdown setlocal wrap linebreak breakindent
+au filetype text setlocal wrap linebreak breakindent
+au filetype markdown,text nnoremap <buffer> j gj
+au filetype markdown,text nnoremap <buffer> k gk
+au filetype markdown,text vnoremap <buffer> j gj
+au filetype markdown,text vnoremap <buffer> k gk
 
 " ----- autocomplete -----
 " disable the annoying doc scratch window
