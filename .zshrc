@@ -49,3 +49,6 @@ alias ve="vim '+ normal G'"
 
 # open this week's note
 n() { vim ~/notes/$(date +%Yw%V).md }
+
+# Local, untracked overrides (secrets, machine-specific config)
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
