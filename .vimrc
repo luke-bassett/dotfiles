@@ -10,21 +10,15 @@ set formatoptions-=t " don't autowrap (use gq)
 " ----- colors and background -----
 set t_Co=256
 set background=dark
-if has('termguicolors')
-  set termguicolors
-endif
 
 " ----- cursor -----
 " set cursor to have nice contrast
 highlight MatchParen gui=bold guibg=NONE guifg=lightblue cterm=bold ctermbg=NONE
 
-" ----- insert mode highlighting -----
-" Dark green background while in insert mode.
-augroup InsertModeHighlight
-  autocmd!
-  autocmd InsertEnter * highlight Normal ctermbg=22 guibg=#0c1a0d
-  autocmd InsertLeave * highlight Normal ctermbg=NONE guibg=NONE
-augroup END
+" ----- insert mode cursor color -----
+" Green cursor in insert mode; restore on leave.
+let &t_SI = "\e]12;#008700\x7"
+let &t_EI = "\e]12;#c0c0c0\x7"
 
 " ----- tab settings -----
 filetype plugin indent on
